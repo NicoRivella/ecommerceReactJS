@@ -1,0 +1,50 @@
+.NavBar {
+    margin: 0;
+    width: auto;
+    background-color: #565656;
+    font-size: 16px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.NavBar ul {
+    margin: 0;
+    padding: 8px 0;
+    list-style: none;
+    height: auto;
+}
+
+.NavBar li {
+    display: inline;
+    padding: 8px;
+}
+
+.NavBar a {
+    color: #FFF;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.NavBar a:hover {
+    background-color: #1B191B;
+    color: #FFF;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.NavBar li .active {
+    background-color: #1B191B;
+    color: #FFF;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+}
