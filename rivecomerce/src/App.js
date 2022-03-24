@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         <NavBar />
       </header>
       <h2>
-            Próximamente, ofertas de la semana...
+        Próximamente, ofertas de la semana...
       </h2>
     </div>
   );
