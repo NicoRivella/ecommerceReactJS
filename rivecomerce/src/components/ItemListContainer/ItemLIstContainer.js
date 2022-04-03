@@ -1,9 +1,19 @@
+import ItemCount from "../ItemCount/ItemCount"
+
 const ItemListContainer = (props) => {
-    console.log (props.greetings)
+    const handleOnAdd = (quantity) => {
+        console.log(`se agregaron ${quantity} productos`)
+      }
+
     return (
-        <h1>
-            {props.greetings}
-        </h1>        
+        <div>
+            <h1>
+                {props.greetings}
+            </h1> 
+            <div>
+                <ItemCount initial={0} stock={10} onAdd={handleOnAdd}/> 
+            </div>      
+        </div>
     )
 }
 
