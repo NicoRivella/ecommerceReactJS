@@ -1,4 +1,6 @@
 import ItemCount from "../ItemCount/ItemCount"
+import ItemList from "../ItemList/ItemList"
+
 
 const ItemListContainer = (props) => {
     const handleOnAdd = (quantity) => {
@@ -12,7 +14,8 @@ const ItemListContainer = (props) => {
             </h1> 
             <div>
                 <ItemCount initial={0} stock={10} onAdd={handleOnAdd}/> 
-            </div>      
+            </div>
+            <ItemList></ItemList>      
         </div>
     )
 }

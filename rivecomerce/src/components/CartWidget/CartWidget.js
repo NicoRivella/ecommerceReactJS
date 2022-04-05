@@ -4,7 +4,6 @@ import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 const CartWidget = (props) => {
-    console.log (props.greetings)
     return (
       <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
         <IconButton

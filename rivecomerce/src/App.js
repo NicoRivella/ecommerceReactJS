@@ -1,5 +1,7 @@
 import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemLIstContainer';
+import ItemListContainer from './components/ItemListContainer/ItemLIstContainer'
+import Container from '@mui/material/Container';
+
 
 function App() {
   return (
@@ -7,7 +9,9 @@ function App() {
       <header>
         <NavBar />
       </header>
-      <ItemListContainer greetings='Próximamente... las ofertas!' />
+      <Container sx={{ marginY: 5 }}>
+        <ItemListContainer greetings='Próximamente... las ofertas!' />
+      </Container>
     </div>
   );
 }
