@@ -17,11 +17,30 @@ const Products = [
         id: 3,
         title: '300',
         description: 'Descripción de 300',
-        pricce: '450',
+        price: '450',
         pictureUrl: 'https://jorgecine1997.files.wordpress.com/2020/01/300.jpg',
     },
     
 ]
+
+
+export const GetProduct = (id_Product) => {
+    const producto = Products.find( producto => producto.id === 1 );
+
+    return new Promise((resolve, reject) => {
+        const ok = true;
+            setTimeout(() => {
+                if (ok) {
+                    console.log(producto)
+                    resolve(producto);
+                } else {
+                    reject('error');
+                }
+            }, 2000);  
+    })    
+
+}
+
 
 const getProducts = () => {
     return new Promise((resolve, reject) => {

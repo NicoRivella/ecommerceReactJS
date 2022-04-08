@@ -8,9 +8,9 @@ import Typography from '@mui/material/Typography';
 const ItemCount = ({initial, stock, onAdd}) => {
     const [count, setCount] = useState(0)    
 
-    useEffect(() => {
-        console.log('cambio el count')
-    }, [count])
+    /*useEffect(() => {
+    //    console.log('cambio el count')
+    }, [count]) */
 
     const decrement = () => {
         if (count > 0) {

@@ -1,3 +1,4 @@
+import { Box } from "@mui/material"
 import ItemCount from "../ItemCount/ItemCount"
 import ItemList from "../ItemList/ItemList"
 
@@ -8,15 +9,15 @@ const ItemListContainer = (props) => {
       }
 
     return (
-        <div>
+        <Box>
             <h1>
                 {props.greetings}
             </h1> 
-            <div>
+            <Box>
                 <ItemCount initial={0} stock={10} onAdd={handleOnAdd}/> 
-            </div>
+            </Box>
             <ItemList></ItemList>      
-        </div>
+        </Box>
     )
 }
 
