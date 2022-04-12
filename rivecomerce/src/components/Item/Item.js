@@ -2,9 +2,10 @@ import Typography from '@mui/material/Typography';
 import Paper  from '@mui/material/Paper';
 import Box from '@mui/system/Box';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 
-const Item  = ({title, pictureUrl, price}) => {
+const Item  = ({id, title, pictureUrl, price}) => {
 //console.log ({title}, {pictureUrl}, {price})
 return (
     <Paper elevation={3} sx={{
@@ -28,7 +29,7 @@ return (
                 ${price}
             </Typography>
         </Box>
-        <Button size="small" variant="contained">Ver Detalle</Button>
+        <Button size="small" variant="contained"><Link style={{textDecoration:"none", color:"white"}} to={`/detail/${id}`}> Ver Detalle </Link></Button>
 
     </Paper>
 )

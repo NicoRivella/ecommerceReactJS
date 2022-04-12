@@ -1,16 +1,8 @@
-import React, { useState, useEffect } from 'react';
 import Item from '../Item/Item';
 import Box from '@mui/system/Box';
-import getProducts from '../../mocks/getProducts';
 
 
-const ItemList = () => {
-    const [products, setProducts] = useState([]);
-    useEffect(() => {
-        getProducts()
-        .then((products) => setProducts(products))
-        .catch((error) => console.log(error));
-    }, []);
+const ItemList = ({products}) => {
 
     return(
         <Box> 
