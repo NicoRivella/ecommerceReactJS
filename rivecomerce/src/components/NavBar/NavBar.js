@@ -30,23 +30,7 @@ const NavBar = () => {
           >
           <NavLink style={{textDecoration:"none", color:"white"}} to={'/'}>RiveCommerce</NavLink> 
           </Typography>
-          {/*<MenuItem>
-            <Typography align="center">
-              Libros
-            </Typography>
-          </MenuItem>
-          <MenuItem>
-            <Typography align="center">
-              CDs
-            </Typography>
-          </MenuItem>
-          <MenuItem>
-            <Typography align="center">
-              DVDs
-            </Typography>
-          </MenuItem>
-        */}
-        { categories.map(cat => <MenuItem><Typography align="center"><NavLink style={{textDecoration:"none", color:"white"}} key={cat.id} to={`/category/${cat.id}`}>{cat.description}</NavLink></Typography></MenuItem> )}
+        { categories.map(cat => <MenuItem key={cat.id}><Typography align="center"><NavLink style={{textDecoration:"none", color:"white"}} key={cat.id} to={`/category/${cat.id}`}>{cat.description}</NavLink></Typography></MenuItem> )}
         <Box sx={{ flexGrow: 1 }} />
          <CartWidget /> 
         </Toolbar>
