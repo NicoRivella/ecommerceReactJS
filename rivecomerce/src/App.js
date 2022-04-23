@@ -5,6 +5,7 @@ import Container from '@mui/material/Container';
 import { Box } from '@mui/material';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import CartProvider from './context/CartContext' 
+import Cart from './components/Cart/Cart';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               <Route path='/' element= {<ItemListContainer/>}/>
               <Route path='/category/:categoryId' element= {<ItemListContainer/>}/>
               <Route path='/detail/:productId' element={<ItemDetailContainer />}/>
+              <Route path='/cart' element= {<Cart/>}/>
               <Route path='*' element= {<h1>ELEMENT NOT FOUND 404</h1>}/>
             </Routes>
           </Container>
