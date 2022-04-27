@@ -6,7 +6,6 @@ import Box from '@mui/system/Box';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
-
 const Cart = () => {
 
     const carrito = useCart()
@@ -33,9 +32,8 @@ const Cart = () => {
                     marginBottom: 5
                 }}>
                     <Button size="small" variant="contained"><Link style={{textDecoration:"none", color:"white"}} to={'/'}> Listar Productos </Link></Button>
-                </Box>
-
-            </Paper>      
+                </Box> 
+          </Paper>     
         )
     }
 

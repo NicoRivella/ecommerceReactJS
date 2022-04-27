@@ -4,7 +4,7 @@ const Products = [
         title: 'Río Sagrado',
         category: 'libro',
         description: 'Descripción de Río Sagrado',
-        price: '150',
+        price: '500',
         stock: 21,
         pictureUrl: 'http://www.duomoediciones.com/clases/tools/imgManager.php?url=/cont/catalogo/imagePot/RIO_SAGRADO_def_web.jpg&width=175',
     },
